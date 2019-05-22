@@ -1,0 +1,124 @@
+@import 'variables.scss';
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.w3-row-padding img {
+  margin-bottom: 12px;
+}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {
+  width: 120px;
+  background: #222;
+}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {
+  margin-left: 120px;
+}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+  #main {
+    margin-left: 0;
+  }
+}
+
+.bg-primary {
+  background-color: $bg-primary;
+}
+
+.text-light {
+  color: $text-light;
+}
+
+body {
+  color: $text-dark;
+}
+
+.navbar {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.navbar__item {
+  padding-top: 1.5rem !important;
+  background-color: $bg-light;
+}
+
+.page-content__container {
+  -webkit-box-shadow: 0 1px 2px #777;
+	-moz-box-shadow: 0 2px 1px #777;
+	box-shadow: 0 2px 1px #777;
+}
+
+.page-content {
+  max-width: 100% !important;
+  margin: 1rem 0 .5rem 0;
+  padding: 3rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.15);
+}
+
+.page-content__title {
+  background-color: $bg-primary;
+  color: $text-light;
+  margin: 2rem 0 2rem 0;
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+.page-content__text {
+  padding: 0 .5rem 0 .5rem;;
+}
+
+.page-content__title_color-variant-1 {
+  background-color: $bg-secondary;
+  color: $text-light;
+}
+
+.page-content__title_color-variant-2 {
+  background-color: $bg-warning;
+  color: $text-white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.page-content__title_color-variant-3 {
+  background-color: $bg-muted;
+  color: $text-light;
+}
+
+.about__title {
+  color: black;
+  border-bottom: .5rem solid orange;
+}
+
+.progress-bar__title {
+  color: $text-dark;
+}
+
+.progress-bar__line {
+  min-height: 28px;
+  max-height: 35px;
+  height: 28px;
+  background-color: $bg-secondary;
+}
+
+.contact-form__send-button {
+  background-color: $bg-warning;
+  color: $text-light;
+  border-radius: .5rem;
+}
+
+.portfolio-item {
+  min-width: 96px;
+  max-width: 192px;
+  min-height: 96px;
+  max-height: 128px;
+  margin: .5rem .1rem .5rem .1rem;
+}
