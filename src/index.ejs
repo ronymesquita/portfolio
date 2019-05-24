@@ -10,7 +10,7 @@
   <link rel="icon" href="/assets/img/favicon.png">
   <link
     rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Montserrat" />
+    href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
@@ -19,7 +19,10 @@
     <!-- Icon Bar (Sidebar - hidden on small screens) -->
     <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center navbar" role="navigation">
       <!-- Avatar image in top left corner -->
-      <img src="/assets/img/portrait.png" style="width:100%" alt="Retrato" title="Retrato" />
+      <picture>
+        <source srcset="/assets/img/portrait.webp">
+        <img src="/assets/img/portrait.png" style="width:100%" alt="Retrato" title="Retrato">
+      </picture>
       <a href="#" class="w3-bar-item navbar__item w3-hover-white w3-button w3-black">
         <i class="fas fa-home w3-xxlarge"></i>
         <p>PÁGINA INICIAL</p>
