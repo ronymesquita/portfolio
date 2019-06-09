@@ -20,7 +20,7 @@
     <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center navbar" role="navigation">
       <!-- Avatar image in top left corner -->
       <picture>
-        <source src="/assets/img/portrait.webp">
+        <source src="/assets/img/portrait.webp" type="image/webp">
         <img src="/assets/img/portrait.png" style="width:100%" alt="Retrato" title="Retrato">
       </picture>
       <a href="#" class="w3-bar-item navbar__item w3-hover-white w3-button w3-black">
@@ -273,8 +273,7 @@
             <textarea
               class="w3-input w3-padding-16"
               placeholder="Mensagem"
-              name="message">
-            </textarea>
+              name="message"></textarea>
           </p>
           <p>
             <button
@@ -288,15 +287,24 @@
       </div>
 
       <!-- Footer -->
-      <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge page-content" role="contentinfo">
-        <a href="https://www.linkedin.com/in/rony-mesquita-da-silva">
-          <i class="fab fa-linkedin-in w3-hover-opacity"></i>
-        </a>
+      <footer class="w3-content w3-padding-24 w3-text-grey w3-xlarge page-content" role="contentinfo">
+        <section class="footer__links">
+          <p class="footer__link footer__link-first">
+            <a href="https://www.linkedin.com/in/rony-mesquita-da-silva" title="Perfil no Linkedin">
+              <i class="fab fa-linkedin-in w3-text-blue-gray w3-hover-text-blue"></i>
+            </a>
+          </p>
+          <p class="footer__link">
+            <a href="https://ronymesquita.site" alt="ronymesquita.site" title="Portal ronymesquita.site">
+              <picture>
+                <source src="/assets/img/site-icon.webp" type="image/webp">
+                <img src="/assets/img/site-icon.png">
+              </picture>
+            </a>
+          </p>
+        </section>
         <p class="w3-medium">
-          Rony Mesquita da Silva
-          <a
-            href="#"
-            class="w3-hover-text-green">ronymesquita.site</a>
+          &copy; 2019 | Desenvolvido por Rony Mesquita da Silva
         </p>
         <!-- End footer -->
       </footer>
